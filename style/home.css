@@ -1,0 +1,71 @@
+/* responsive section */
+@media (max-width: 767px) {
+
+    .container-blog {
+        padding-left: 1.5rem;
+        /* Adjust as needed */
+        padding-right: 1.5rem;
+        /* Adjust as needed */
+    }
+
+    .container-footer {
+        padding-left: 1.5rem;
+        /* Adjust as needed */
+        padding-right: 1.5rem;
+        /* Adjust as needed */
+    }
+
+    .blog-head {
+        font-size: 30px;
+    }
+
+}
+
+.whatsapp {
+    background-color: #576CBC;
+    color: white;
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.join-community {
+    background: #25D366;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 750px) {
+    .join-community {
+        background: #25D366;
+        color: white;
+        font-size: 0.9rem;
+        padding: 3px 7px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+
+    ion-icon {
+        font-size: 0.9rem;
+
+    }
+
+    .whatsapp {
+        background-color: #5073ff;
+        color: white;
+        font-weight: 700;
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 0;
+
+    }
+}
