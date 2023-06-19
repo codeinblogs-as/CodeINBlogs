@@ -1,0 +1,120 @@
+.headingOfAboutSection2 {
+    font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+
+    .container-footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .headingOfAboutSection2 {
+        font-size: 1.4rem;
+        margin-left: 1px !important;
+        margin-right: 1px !important;
+
+        margin-top: 5% !important;
+    }
+
+
+}
+
+
+.whatsapp {
+    background-color: #576CBC;
+    color: white;
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.join-community {
+    background: #25D366;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+ion-icon {
+    font-size: 1rem;
+}
+
+
+@media (max-width: 750px) {
+    .join-community {
+        background: #25D366;
+        color: white;
+        font-size: 0.9rem;
+        padding: 3px 7px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+
+    ion-icon {
+        font-size: 0.9rem;
+
+    }
+
+    .whatsapp {
+        background-color: #5073ff;
+        color: white;
+        font-weight: 700;
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 0;
+
+    }
+}
+
+.para {
+    background-color: #0099ff !important;
+    font-style: italic;
+}
+
+.para1 {
+    font-size: 18px !important;
+}
+
+.logo {
+    width: 500px;
+    height: 500px;
+}
+
+.join-now-btn {
+    background-color: #25d366;
+    border-radius: 100px;
+    box-shadow: rgba(41, 176, 93, 0.577) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, 0.499) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: #1f3760;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.join-now-btn:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-0.3deg);
+    background: 128c7e;
+}
+
+
