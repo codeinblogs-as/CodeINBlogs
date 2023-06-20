@@ -565,25 +565,25 @@
         <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
               <div class="text-center md:border-r">
-                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl">600+</h6>
+                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl"><span id="community-members">600</span>+</h6>
                 <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
                   Community Member
                 </p>
               </div>
               <div class="text-center md:border-r">
-                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl">15+</h6>
+                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl" ><span id="events">15</span>+</h6>
                 <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
                   Events
                 </p>
               </div>
               <div class="text-center md:border-r">
-                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl">25+</h6>
+                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl"><span id="mentors">25</span>+</h6>
                 <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
                   Mentors
                 </p>
               </div>
               <div class="text-center">
-                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl">60+</h6>
+                <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl"><span id="opportunities">60</span>+</h6>
                 <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
                   Opportunity Provided
                 </p>
@@ -706,11 +706,14 @@
         const communityMembersElement = document.getElementById('community-members');
         const eventsElement = document.getElementById('events');
         const opportunitiesElement = document.getElementById('opportunities');
+        const mentorsElement = document.getElementById('mentors');
 
         //values of counter
         const communityMembersTarget = 600;
-        const eventsTarget = 45;
-        const opportunitiesTarget = 300;
+        const eventsTarget = 15;
+        const opportunitiesTarget = 60;
+        const mentorsTarget = 25;
+
 
         let communityMembersValue = 0;
         let eventsValue = 0;
@@ -729,9 +732,12 @@
                 opportunitiesValue += Math.ceil(opportunitiesTarget / 100);
                 opportunitiesElement.textContent = opportunitiesValue.toLocaleString();
             }
-
-            if (communityMembersValue < communityMembersTarget || eventsValue < eventsTarget || opportunitiesValue < opportunitiesTarget) {
-                setTimeout(updateCounter, 20); //delay value
+            if (eventsValue < eventsTarget) {
+                eventsValue += Math.ceil(mentorsTarget / 100);
+                mentorsElement.textContent = eventsValue.toLocaleString();
+            }
+            if (communityMembersValue < communityMembersTarget || eventsValue < eventsTarget || opportunitiesValue < opportunitiesTarget || mentorsElement < mentorsTarget) {
+                setTimeout(updateCounter, 30); //delay value
             }
         };
 
