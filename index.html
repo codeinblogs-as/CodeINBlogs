@@ -521,7 +521,7 @@
         </div>
     </section>
     <!-- team section end -->
-    <!-- team section start-->
+    <!--Community section start-->
     <section class="bg-white dark:bg-gray-900 pt-16">
         <div class="container px-6 py-10 mx-auto" id="Team">
             <h1 class="text-4xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white ">Our
@@ -534,26 +534,26 @@
 
                     <img class="object-fill rounded-lg ring-4 ring-gray-300"
                         src="./assests/logo/community-partner/SOS-tech.png" alt="">
-<h1 class="text-4xl font-medium text-white mt-3">SOS Tech</h1>
+                    <h1 class="text-4xl font-medium text-white mt-3">SOS Tech</h1>
                 </div>
 
                 <div
-                class="flex flex-col items-center p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent ">
+                    class="flex flex-col items-center p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent ">
 
-                <img class="object-fill rounded-lg ring-4 ring-gray-300"
-                    src="./assests/logo/community-partner/Tech Surfer.png" alt="">
-<h1 class="text-4xl font-medium text-white mt-3">Tech Surfers</h1>
-            </div>
+                    <img class="object-fill rounded-lg ring-4 ring-gray-300"
+                        src="./assests/logo/community-partner/Tech Surfer.png" alt="">
+                    <h1 class="text-4xl font-medium text-white mt-3">Tech Surfers</h1>
+                </div>
 
 
 
-            <div
-            class="flex flex-col items-center p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent ">
+                <div
+                    class="flex flex-col items-center p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent ">
 
-            <img class="object-fill rounded-lg ring-4 ring-gray-300"
-                src="./assests/logo/community-partner/dev code community.png" alt="">
-<h1 class="text-4xl font-medium text-white mt-3">Dev Code </h1>
-        </div>
+                    <img class="object-fill rounded-lg ring-4 ring-gray-300"
+                        src="./assests/logo/community-partner/dev code community.png" alt="">
+                    <h1 class="text-4xl font-medium text-white mt-3">Dev Code </h1>
+                </div>
 
 
 
@@ -594,6 +594,33 @@
         <button class="Join-us" role="button" onclick="GroupLink()"><span class="text">Join our Community <i class="fa-solid fa-arrow-right-to-bracket"></i></span></button>
     </section>
 
+
+
+    <div class="flex justify-center py-10 bg-gray-900">
+        <div class="flex items-center space-x-8">
+            <div class="flex items-center bg-purple-600 rounded-lg p-4">
+                <i class="fas fa-users text-6xl text-white"></i>
+                <div class="ml-2">
+                    <h1 id="community-members" class="text-6xl text-white font-bold">0</h1>
+                    <p class="text-3xl text-white">Community members</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-blue-600 rounded-lg p-4">
+                <i class="far fa-calendar text-6xl text-white"></i>
+                <div class="ml-2">
+                    <h1 id="events" class="text-6xl text-white font-bold">0</h1>
+                    <p class="text-3xl text-white">Events</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-green-600 rounded-lg p-4">
+                <i class="fas fa-graduation-cap text-6xl text-white"></i>
+                <div class="ml-2">
+                    <h1 id="opportunities" class="text-6xl text-white font-bold">0</h1>
+                    <p class="text-3xl text-white">Opportunities Provided</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer section start -->
@@ -698,8 +725,43 @@
         gtag('config', 'G-17C8VGB69W');
     </script>
 
-    <!-- custom js file  -->
-    <script src="./js/index.js"></script>
+    <!-- counter section script -->
+    <script>
+        const communityMembersElement = document.getElementById('community-members');
+        const eventsElement = document.getElementById('events');
+        const opportunitiesElement = document.getElementById('opportunities');
+
+        //values of counter
+        const communityMembersTarget = 600;
+        const eventsTarget = 45;
+        const opportunitiesTarget = 300;
+
+        let communityMembersValue = 0;
+        let eventsValue = 0;
+        let opportunitiesValue = 0;
+
+        const updateCounter = () => {
+            if (communityMembersValue < communityMembersTarget) {
+                communityMembersValue += Math.ceil(communityMembersTarget / 100);
+                communityMembersElement.textContent = communityMembersValue.toLocaleString();
+            }
+            if (eventsValue < eventsTarget) {
+                eventsValue += Math.ceil(eventsTarget / 100);
+                eventsElement.textContent = eventsValue.toLocaleString();
+            }
+            if (opportunitiesValue < opportunitiesTarget) {
+                opportunitiesValue += Math.ceil(opportunitiesTarget / 100);
+                opportunitiesElement.textContent = opportunitiesValue.toLocaleString();
+            }
+
+            if (communityMembersValue < communityMembersTarget || eventsValue < eventsTarget || opportunitiesValue < opportunitiesTarget) {
+                setTimeout(updateCounter, 20); //delay value
+            }
+        };
+
+        updateCounter();
+    </script>
+
 </body>
 
 </html>
