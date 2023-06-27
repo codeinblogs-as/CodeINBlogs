@@ -11,18 +11,22 @@
         <link href="career-files/css/plugins.css" rel="stylesheet">
 		 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.min.css">
+		 <link href="./style/style.css" rel="stylesheet">
 
         <!-- Custom CSS -->
         <link href="career-files/css/styles.css" rel="stylesheet">
     </head>
 	
     <body class="blue-skin">
-        <!-- ============================================================== -->
-        <!-- Preloader - style you can find in spinners.css -->
-        <!-- ============================================================== -->
-        <div class="Loader"></div>
-		
-        <!-- ============================================================== -->
+		<div id="loading-animation">
+			<div id="logo">
+				<div class="spinner-square">
+					<div class="square-1 square"></div>
+					<div class="square-2 square"></div>
+					<div class="square-3 square"></div>
+				</div>
+			</div>
+		</div>
         <!-- Main wrapper - style you can find in pages.scss -->
         <!-- ============================================================== -->
         <div id="main-wrapper">
@@ -102,7 +106,7 @@
 					<div class="row align-items-center">	
 					
 						<div class="col-lg-7 col-md-8">
-							<a href="#" class="header-promo light w-inline-block"><div class="label bg-success">NEW</div><div class="header-promo-text">CodeINBlogs is now world wide job find platform</div></a>
+							<a href="#" class="header-promo light w-inline-block"><div class="label bg-success">NEW</div><div class="header-promo-text">CodeINBlogs have Career Page also!</div></a>
 							<h1>Find <span class="text-info">your job</span> & make sure goal!</h1>
 							<p class="lead">Your dream job is waiting for you.</p>
 							<form class="search-big-form banner-search shadow mt-3">
@@ -1105,6 +1109,7 @@
 		<script src="career-files/js/materialize.min.js"></script>
 		<script src="career-files/js/metisMenu.min.js"></script>
 		<script src="career-files/js/custom.js"></script>
+		<script src="./js/index.js"></script>
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
