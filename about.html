@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us-CodeINBlogs</title>
     <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/style.css">
+
     <link rel="stylesheet" href="./style/output.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
@@ -22,11 +24,21 @@
 </style>
 
 <body class="dark">
+
+    <div id="loading-animation">
+        <div id="logo">
+            <div class="spinner-square">
+                <div class="square-1 square"></div>
+                <div class="square-2 square"></div>
+                <div class="square-3 square"></div>
+            </div>
+        </div>
+    </div>
     <div class="whatsapp">
 
         Join Our Community on Whatsapp Now!
         <button class="join-community" onclick="GroupLink()"><i class="fa-brands fa-whatsapp"
-            style=" font-size:18px; font-weight:900; color: #ffffff;"></i> Join
+                style=" font-size:18px; font-weight:900; color: #ffffff;"></i> Join
             Community</button>
     </div>
 
@@ -235,8 +247,9 @@
                     </p>
                 </div>
             </div>
-            <center> <button class="join-now-btn" role="button" onclick="GroupLink()"><b><i class="fa-brands fa-whatsapp"
-                            style=" font-size:18px; font-weight:900; color: #1f3760;"></i> Join Our WhatsApp Community
+            <center> <button class="join-now-btn" role="button" onclick="GroupLink()"><b><i
+                            class="fa-brands fa-whatsapp" style=" font-size:18px; font-weight:900; color: #1f3760;"></i>
+                        Join Our WhatsApp Community
                         Now!</b></button></center>
 
         </div>
@@ -300,7 +313,7 @@
                 <p>&copy; 2023 CodeInBlog. All rights reserved.</p>
 
                 <div class="flex mt-3 -mx-2">
-                    <a href="#"
+                    <a href="https://github.com/codeinblogs-as"
                         class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
                         aria-label="Github">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 fill-current"
@@ -310,7 +323,7 @@
                         </svg>
                     </a>
 
-                    <a href="#"
+                    <a href="https://in.linkedin.com/company/codeinblogs"
                         class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
                         aria-label="linkedin">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 fill-current"
@@ -320,7 +333,7 @@
                         </svg>
                     </a>
 
-                    <a href="#"
+                    <a href="https://twitter.com/codeinblogs"
                         class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
                         aria-label="twitter">
                         <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 fill-current"
@@ -336,7 +349,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-17C8VGB69W"></script>
@@ -344,12 +357,12 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-    
+
         gtag('config', 'G-17C8VGB69W');
     </script>
 
-     <!-- custom js file  -->
-     <script src="./js/index.js"></script>
+    <!-- custom js file  -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

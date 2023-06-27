@@ -15,12 +15,21 @@
 
 
 <body class="dark">
+    <div id="loading-animation">
+        <div id="logo">
+            <div class="spinner-square">
+                <div class="square-1 square"></div>
+                <div class="square-2 square"></div>
+                <div class="square-3 square"></div>
+            </div>
+        </div>
+    </div>
 
     <div class="whatsapp">
 
         Join Our Community on Whatsapp Now!
         <button class="join-community" onclick="GroupLink()"><i class="fa-brands fa-whatsapp"
-            style=" font-size:18px; font-weight:900; color: #ffffff;"></i> Join
+                style=" font-size:18px; font-weight:900; color: #ffffff;"></i> Join
             Community</button>
     </div>
     <!-- Navbar start -->
@@ -106,7 +115,7 @@
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
                             Us</a>
                     </li>
-                    </li>
+                   
                 </ul>
             </div>
         </div>
@@ -521,6 +530,87 @@
         </div>
     </section>
     <!-- team section end -->
+    <!--Community section start-->
+    <section class="bg-white dark:bg-gray-900 pt-16">
+        <div class="container px-6 py-10 mx-auto" id="Team">
+            <h1 class="text-4xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white ">Our
+                Community Partners
+            </h1>
+
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-4 md:px-0 lg:px-28">
+                <div
+                    class="flex flex-col items-center p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent ">
+
+                    <img class="object-fill rounded-lg ring-4 ring-gray-300"
+                        src="./assests/logo/community-partner/SOS-tech.png" alt="">
+                    <h1 class="text-4xl font-medium text-white mt-3">SOS Tech</h1>
+                </div>
+
+                <div
+                    class="flex flex-col items-center p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent ">
+
+                    <img class="object-fill rounded-lg ring-4 ring-gray-300"
+                        src="./assests/logo/community-partner/Tech Surfer.png" alt="">
+                    <h1 class="text-4xl font-medium text-white mt-3">Tech Surfers</h1>
+                </div>
+
+
+
+                <div
+                    class="flex flex-col items-center p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent ">
+
+                    <img class="object-fill rounded-lg ring-4 ring-gray-300"
+                        src="./assests/logo/community-partner/dev code community.jpg" alt="">
+                    <h1 class="text-4xl font-medium text-white mt-3">Dev Code </h1>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- statistics-section starts  -->
+    <section class="bg-white dark:bg-indigo-900 pt-6 pb-6">
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
+                <div class="text-center md:border-r">
+                    <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl"><span
+                            id="community-members">600</span>+</h6>
+                    <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
+                        Community Member
+                    </p>
+                </div>
+                <div class="text-center md:border-r">
+                    <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl"><span id="events">15</span>+</h6>
+                    <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
+                        Events
+                    </p>
+                </div>
+                <div class="text-center md:border-r">
+                    <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl"><span id="mentors">25</span>+</h6>
+                    <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
+                        Mentors
+                    </p>
+                </div>
+                <div class="text-center">
+                    <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl"><span
+                            id="opportunities">60</span>+</h6>
+                    <p class="text-sm font-medium tracking-widest text-gray-200 uppercase lg:text-base">
+                        Opportunity Provided
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <a href="https://chat.whatsapp.com/Ifc2cxkRaBkJf9LUCXYzgD"><button class="Join-us" role="button"><span
+                    class="text">Join our Community <i
+                        class="fa-solid fa-arrow-right-to-bracket"></i></span></button></a>
+    </section>
+
+
+
+
+
 
     <!-- Footer section start -->
     <footer class="bg-white dark:bg-indigo-950">
@@ -624,8 +714,53 @@
         gtag('config', 'G-17C8VGB69W');
     </script>
 
-    <!-- custom js file  -->
-    <script src="./js/index.js"></script>
+    <!-- counter section script -->
+    <script>
+        const communityMembersElement = document.getElementById('community-members');
+        const eventsElement = document.getElementById('events');
+        const opportunitiesElement = document.getElementById('opportunities');
+        const mentorsElement = document.getElementById('mentors');
+
+        //values of counter
+        const communityMembersTarget = 600;
+        const eventsTarget = 15;
+        const opportunitiesTarget = 60;
+        const mentorsTarget = 25;
+
+
+        let communityMembersValue = 0;
+        let eventsValue = 0;
+        let opportunitiesValue = 0;
+
+        const updateCounter = () => {
+            if (communityMembersValue < communityMembersTarget) {
+                communityMembersValue += Math.ceil(communityMembersTarget / 100);
+                communityMembersElement.textContent = communityMembersValue.toLocaleString();
+            }
+            if (eventsValue < eventsTarget) {
+                eventsValue += Math.ceil(eventsTarget / 100);
+                eventsElement.textContent = eventsValue.toLocaleString();
+            }
+            if (opportunitiesValue < opportunitiesTarget) {
+                opportunitiesValue += Math.ceil(opportunitiesTarget / 100);
+                opportunitiesElement.textContent = opportunitiesValue.toLocaleString();
+            }
+            if (eventsValue < eventsTarget) {
+                eventsValue += Math.ceil(mentorsTarget / 100);
+                mentorsElement.textContent = eventsValue.toLocaleString();
+            }
+            if (communityMembersValue < communityMembersTarget || eventsValue < eventsTarget || opportunitiesValue < opportunitiesTarget || mentorsElement < mentorsTarget) {
+                setTimeout(updateCounter, 30); //delay value
+            }
+        };
+
+        updateCounter();
+        window.addEventListener('load', function() {
+            var loadingAnimation = document.getElementById('loading-animation');
+            loadingAnimation.style.display = 'none';
+          });
+    </script>
+
 </body>
 
 </html>
