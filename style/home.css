@@ -140,7 +140,11 @@
 
 .Join-us {
     align-items: center;
+<<<<<<< HEAD
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+=======
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+>>>>>>> 0b1812089ea92b28373a19c3f4802be4c83bf1a5
     border: 0;
     margin-top: 3% !important;
     margin: auto;
@@ -150,7 +154,11 @@
     color: #FFFFFF;
     display: flex;
     font-family: Phantomsans, sans-serif;
+<<<<<<< HEAD
     color: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+=======
+    color: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+>>>>>>> 0b1812089ea92b28373a19c3f4802be4c83bf1a5
     font-size: 20px;
     justify-content: center;
     line-height: 1em;
@@ -164,6 +172,7 @@
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
+<<<<<<< HEAD
   }
   
   .Join-us:active,
@@ -172,12 +181,23 @@
   }
   
   .Join-us span {
+=======
+}
+
+.Join-us:active,
+.Join-us:hover {
+    outline: 0;
+}
+
+.Join-us span {
+>>>>>>> 0b1812089ea92b28373a19c3f4802be4c83bf1a5
     background-color: rgb(5, 6, 45);
     padding: 16px 24px;
     border-radius: 6px;
     width: 100%;
     height: 100%;
     transition: 300ms;
+<<<<<<< HEAD
   }
   
   .Join-us:hover span {
@@ -190,3 +210,17 @@
       min-width: 196px;
     }
   } 
+=======
+}
+
+.Join-us:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .Join-us {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+>>>>>>> 0b1812089ea92b28373a19c3f4802be4c83bf1a5
