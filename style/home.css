@@ -195,17 +195,3 @@
     min-width: 196px;
   }
 }
-
-
-.card-container {
-  padding-left: 10px;
-  /* Adjust the value as per your desired spacing */
-  padding-right: 10px;
-  /* Adjust the value as per your desired spacing */
-}
-
-@media (max-width: 767px) {
-  .card-container {
-    padding-top: 20px;
-  }
-}
