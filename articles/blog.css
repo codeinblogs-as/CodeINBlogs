@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.accent {
+  background-color: rgb(23 37 84);
+}
+
+.action-primary {
+  background-color: hsl(218, 23%, 19%);
+}
+
+.foreground-secondary {
+  background-color: hsl(211, 25%, 84%);
+}
+
+.shadow-div {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.view-more {
+  background: var(--accent);
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
+
+.view-more:hover,
+.view-more:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.view-more:active {
+  opacity: 0.5;
+}
+
+/* CSS */
+.view-full {
+  appearance: button;
+  background-color: #25d097;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #25d097;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.view-full:focus:not(:focus-visible),
+.view-full:focus {
+  outline: 0;
+}
+
+.view-full:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+.view-full:focus {
+  background-color: #25d097;
+  border-color: #25d097;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.view-full:active {
+  background-color: #25d097;
+  background-image: none;
+  border-color: #25d097;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.view-full:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.view-full:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+
+  .container-blog {
+    padding-left: 1.5rem;
+    /* Adjust as needed */
+    padding-right: 1.5rem;
+    /* Adjust as needed */
+  }
+
+  .container-footer {
+    padding-left: 1.5rem;
+    /* Adjust as needed */
+    padding-right: 1.5rem;
+    /* Adjust as needed */
+  }
+
+  .blog-head {
+    font-size: 25px;
+  }
+
+
+}
+
+.whatsapp {
+  background-color: #576CBC;
+  color: white;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+
+}
+
+.join-community {
+  background: #25D366;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+ion-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .desktop-text {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-text {
+    display: none;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .join-community {
+      background: #25D366;
+      color: white;
+      font-size: 0.9rem;
+      padding: 3px 7px;
+      border-radius: 50px;
+      cursor: pointer;
+  }
+
+
+  ion-icon {
+      font-size: 0.9rem;
+
+  }
+
+  .whatsapp {
+      background-color: #5073ff;
+      color: white;
+      font-weight: 700;
+      font-size: 0.7rem;
+      text-align: center;
+      margin: 0 auto;
+      padding: 10px 0;
+
+  }
+}
