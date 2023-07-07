@@ -195,3 +195,13 @@
     min-width: 196px;
   }
 }
+
+
+/* Community partner */
+.card-container {
+  padding-left: 15px;
+  /* Adjust the value as per your desired spacing */
+  padding-right: 15px;
+  /* Adjust the value as per your desired spacing */
+  padding-top: 20px;
+}
