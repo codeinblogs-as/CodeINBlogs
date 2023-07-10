@@ -205,3 +205,8 @@
   /* Adjust the value as per your desired spacing */
   padding-top: 20px;
 }
+
+/* Blog section */
+.absolute {
+  border-radius: 6px;
+}
