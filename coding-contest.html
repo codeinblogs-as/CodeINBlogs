@@ -17,7 +17,12 @@
     <!-- CSS
          ================================================== -->
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
 
     <!-- FontAwesome -->
     <link
@@ -29,9 +34,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
     <!-- Template styles-->
     <link rel="stylesheet" href="./style/coding-contest.css" />
     <!-- Responsive styles-->
@@ -47,20 +55,25 @@
 
   <body>
     <div class="popup" id="popup">
-        <div class="popup-content">
-          <p>Get ready for the CodeINBlogs Online Coding Contest on 19th July, from 4:00 PM to 4:20 PM!
-
-            The "Participate Now" page opens 5 minutes before the event starts. Be sure to arrive on the website 5-6 minutes early to join the contest and secure your spot in this thrilling coding adventure!
-            
-            Compete, have fun, and stand a chance to win exciting prizes. Don't miss out—set your timer and be there on time!</p>
-          <button id="close-btn">Close</button>
-        </div>
+      <div class="popup-content">
+        <p>
+          Get ready for the CodeINBlogs Online Coding Contest on 19th July, from
+          4:00 PM to 4:20 PM! The "Participate Now" page opens 5 minutes before
+          the event starts. Be sure to arrive on the website 5-6 minutes early
+          to join the contest and secure your spot in this thrilling coding
+          adventure! Compete, have fun, and stand a chance to win exciting
+          prizes. Don't miss out—set your timer and be there on time!
+        </p>
+        <button id="close-btn">Close</button>
       </div>
+    </div>
     <div class="body-inner">
       <!-- banner start-->
       <section
         class="hero-area banner-6 banner-6-alt"
-        style="background-image: url(./assests/images/coding-contest-top_right_bg.png)"
+        style="
+          background-image: url(./assests/images/coding-contest-top_right_bg.png);
+        "
       >
         <div class="banner-item">
           <div class="container">
@@ -87,9 +100,9 @@
                     class="banner-title wow fadeInUp"
                     data-wow-duration="1.5s"
                     data-wow-delay="700ms"
-                    style="font-family: 'Caprasimo', cursive;"
+                    style="font-family: 'Caprasimo', cursive"
                   >
-                  CodeINBlogs Coding <br />Challenge
+                    CodeINBlogs Coding <br />Challenge
                   </h5>
                   <div
                     class="banner-info wow fadeInUp"
@@ -97,28 +110,42 @@
                     data-wow-delay="500ms"
                   >
                     <div class="icon">
-                      <img src="./assests/images/coding-contest-address.png" alt="" />
+                      <img
+                        src="./assests/images/coding-contest-address.png"
+                        alt=""
+                      />
                     </div>
                     <h3>Virtual Contest</h3>
                   </div>
                 </div>
                 <!-- Banner content wrap end -->
               </div>
+
               <!-- col end-->
               <div class="col-md-6">
                 <div class="banner-image">
-                  <img src="./assests/images/coding-contest-header_vector.png
-                  " alt="" />
+                  <img
+                    src="./assests/images/coding-contest-header_vector.png
+                  "
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
             <!-- row end-->
+
+            <div
+              class="sub-title color-primary wow fadeInUp fw-bold"
+              data-wow-duration="1.5s"
+              data-wow-delay="800ms"
+              id="after-countdown"
+            ></div>
             <div class="row">
               <div class="col-12">
                 <div class="ts-extra-feature banner-content-wrap">
                   <div class="row align-items-center justify-content-between">
                     <div class="col-md-4">
-                      <!-- Countdown end -->
+                      <!-- Countdown start -->
                       <div class="ts-count-down">
                         <div
                           class="countdown clearfix wow fadeInUp"
@@ -126,27 +153,29 @@
                           data-wow-delay="400ms"
                         >
                           <div class="counter-item">
-                            <span class="days">00</span>
+                            <span class="days" id="day"></span>
                             <div class="smalltext">Days</div>
                             <b>:</b>
                           </div>
                           <div class="counter-item">
-                            <span class="hours">00</span>
+                            <span class="hours" id="hour"></span>
                             <div class="smalltext">Hours</div>
                             <b>:</b>
                           </div>
                           <div class="counter-item">
-                            <span class="minutes">00</span>
+                            <span class="minutes" id="minute"></span>
                             <div class="smalltext">Minutes</div>
                             <b>:</b>
                           </div>
                           <div class="counter-item">
-                            <span class="seconds">00</span>
+                            <span class="seconds" id="second"></span>
                             <div class="smalltext">Seconds</div>
                           </div>
                         </div>
                       </div>
+                      <!-- Countdown end -->
                     </div>
+
                     <!-- end col -->
                     <div class="col-md-5">
                       <div
@@ -156,7 +185,11 @@
                       >
                         <a href="#" class="btn" id="button">Participate Now</a>
 
-                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230719T103000Z%2F20230719T105000Z&details=%2A%2AEvent%20Description%3A%20CodeINBlogs%20Coding%20Challenge%2A%2A%0A%0AAre%20you%20ready%20to%20put%20your%20coding%20skills%20to%20the%20test%3F%20Join%20us%20for%20the%20CodeINBlogs%20Coding%20Challenge%2C%20an%20exhilarating%20online%20competition%20that%20will%20push%20your%20limits%20and%20ignite%20your%20passion%20for%20coding%21%0A%0AEvent%20Date%3A%2019th%20July%0AEvent%20Time%3A%204%3A00%20PM%20-%204%3A20%20PM%0A%0AThis%20fast-paced%20coding%20challenge%20is%20designed%20to%20bring%20out%20the%20best%20in%20coding%20enthusiasts%20like%20you.%20Get%20ready%20for%20a%20series%20of%20fully%20hard%20coding%20quizzes%20that%20will%20challenge%20your%20problem-solving%20abilities%20and%20put%20your%20coding%20knowledge%20to%20the%20ultimate%20test.%0A%0AAs%20you%20participate%2C%20you%27ll%20experience%20the%20thrill%20of%20competing%20against%20fellow%20coding%20enthusiasts%20from%20around%20the%20world.%20Click%20fast%2C%20answer%20correctly%2C%20and%20earn%20points%20to%20climb%20the%20live%20leaderboard.%20The%20top%20contenders%20will%20have%20a%20chance%20to%20win%20exciting%20prizes%20and%20an%20exclusive%20winner%27s%20certificate.%0A%0AFor%20the%20ultimate%20champion%2C%20there%27s%20an%20incredible%20opportunity%20to%20join%20our%20team%20and%20be%20recognized%20as%20an%20invaluable%20member%20of%20the%20CodeINBlogs%20community.%0A%0ATo%20ensure%20you%20have%20ample%20time%20to%20prepare%2C%20the%20%22Participate%20Now%22%20page%20will%20open%205%20minutes%20before%20the%20event%20starts.%20Be%20sure%20to%20arrive%20early%2C%20so%20you%20don%27t%20miss%20your%20chance%20to%20secure%20your%20spot%20in%20this%20epic%20coding%20showdown.%0A%0ADon%27t%20miss%20out%20on%20this%20amazing%20opportunity%20to%20showcase%20your%20coding%20prowess%2C%20connect%20with%20fellow%20coding%20enthusiasts%2C%20and%20have%20a%20blast%21%0A%0AMark%20your%20calendars%2C%20set%20your%20reminders%2C%20and%20join%20us%20for%20the%20CodeINBlogs%20Coding%20Challenge%20on%2019th%20July.%20Let%27s%20code%20our%20way%20to%20greatness%20together%21%20See%20you%20there%21&location=https%3A%2F%2Fcodeinblogs.co%2Fcoding-contest%2F&text=CodeINBlogs%20Coding%20Contest" class="btn btn-ticket">
+                        <a
+                          href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230719T103000Z%2F20230719T105000Z&details=%2A%2AEvent%20Description%3A%20CodeINBlogs%20Coding%20Challenge%2A%2A%0A%0AAre%20you%20ready%20to%20put%20your%20coding%20skills%20to%20the%20test%3F%20Join%20us%20for%20the%20CodeINBlogs%20Coding%20Challenge%2C%20an%20exhilarating%20online%20competition%20that%20will%20push%20your%20limits%20and%20ignite%20your%20passion%20for%20coding%21%0A%0AEvent%20Date%3A%2019th%20July%0AEvent%20Time%3A%204%3A00%20PM%20-%204%3A20%20PM%0A%0AThis%20fast-paced%20coding%20challenge%20is%20designed%20to%20bring%20out%20the%20best%20in%20coding%20enthusiasts%20like%20you.%20Get%20ready%20for%20a%20series%20of%20fully%20hard%20coding%20quizzes%20that%20will%20challenge%20your%20problem-solving%20abilities%20and%20put%20your%20coding%20knowledge%20to%20the%20ultimate%20test.%0A%0AAs%20you%20participate%2C%20you%27ll%20experience%20the%20thrill%20of%20competing%20against%20fellow%20coding%20enthusiasts%20from%20around%20the%20world.%20Click%20fast%2C%20answer%20correctly%2C%20and%20earn%20points%20to%20climb%20the%20live%20leaderboard.%20The%20top%20contenders%20will%20have%20a%20chance%20to%20win%20exciting%20prizes%20and%20an%20exclusive%20winner%27s%20certificate.%0A%0AFor%20the%20ultimate%20champion%2C%20there%27s%20an%20incredible%20opportunity%20to%20join%20our%20team%20and%20be%20recognized%20as%20an%20invaluable%20member%20of%20the%20CodeINBlogs%20community.%0A%0ATo%20ensure%20you%20have%20ample%20time%20to%20prepare%2C%20the%20%22Participate%20Now%22%20page%20will%20open%205%20minutes%20before%20the%20event%20starts.%20Be%20sure%20to%20arrive%20early%2C%20so%20you%20don%27t%20miss%20your%20chance%20to%20secure%20your%20spot%20in%20this%20epic%20coding%20showdown.%0A%0ADon%27t%20miss%20out%20on%20this%20amazing%20opportunity%20to%20showcase%20your%20coding%20prowess%2C%20connect%20with%20fellow%20coding%20enthusiasts%2C%20and%20have%20a%20blast%21%0A%0AMark%20your%20calendars%2C%20set%20your%20reminders%2C%20and%20join%20us%20for%20the%20CodeINBlogs%20Coding%20Challenge%20on%2019th%20July.%20Let%27s%20code%20our%20way%20to%20greatness%20together%21%20See%20you%20there%21&location=https%3A%2F%2Fcodeinblogs.co%2Fcoding-contest%2F&text=CodeINBlogs%20Coding%20Contest"
+                          class="btn btn-ticket"
+                          target="_blank"
+                        >
                           <i class="fa fa-plus-circle" aria-hidden="true"></i>
                           ADD TO CALENDAR</a
                         >
@@ -165,7 +198,10 @@
                     <!-- end col -->
                     <div class="col-md-2 text-right">
                       <div class="ts-image">
-                        <img src="./assests/images/coding-contest-small_vector.png" alt="" />
+                        <img
+                          src="./assests/images/coding-contest-small_vector.png"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <!-- end col -->
@@ -181,15 +217,59 @@
       </section>
       <!-- banner end-->
 
-      
-    
-      <script>document.getElementById('button').addEventListener('click', function() {
-        document.getElementById('popup').style.display = 'block';
-      });
-      
-      document.getElementById('close-btn').addEventListener('click', function() {
-        document.getElementById('popup').style.display = 'none';
-      });
+      <script>
+        document
+          .getElementById("button")
+          .addEventListener("click", function () {
+            document.getElementById("popup").style.display = "block";
+          });
+
+        document
+          .getElementById("close-btn")
+          .addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
+          });
+
+        // Script for countdown start
+
+        // Setting deadline
+        let deadline = new Date("july 19, 2023 16:00:00").getTime();
+
+        // Declaring a function
+        let x = setInterval(function () {
+          // Getting current date and time in required format
+          let now = new Date().getTime();
+
+          // Calculating difference
+          let t = deadline - now;
+
+          // Getting values of days,hours,minutes, seconds
+          let days = Math.floor(t / (1000 * 60 * 60 * 24));
+          let hours = Math.floor(
+            (t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+          let seconds = Math.floor((t % (1000 * 60)) / 1000);
+
+          // Show the output time
+          document.getElementById("day").innerHTML = days;
+          document.getElementById("hour").innerHTML = hours;
+          document.getElementById("minute").innerHTML = minutes;
+          document.getElementById("second").innerHTML = seconds;
+
+          // Show overtime output
+          if (t < 0) {
+            clearInterval(x);
+            document.getElementById(
+              "after-countdown"
+            ).innerHTML = `Contest Has Started! Click on "Participate Now" Button Fast!`;
+            document.getElementById("day").innerHTML = "0";
+            document.getElementById("hour").innerHTML = "0";
+            document.getElementById("minute").innerHTML = "0";
+            document.getElementById("second").innerHTML = "0";
+          }
+        }, 1000);
+        // Script for countdown end
       </script>
     </div>
     <!-- Body inner end -->
