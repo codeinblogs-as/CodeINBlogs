@@ -117,7 +117,7 @@ td {
   width: 42rem;
   height: 5.5rem;
   top: -0.5rem;
-  background-color: #FFD700;
+  background-color: #5c5be5;
   position: absolute;
   left: -1rem;
   -webkit-box-shadow: 0px 15px 11px -6px #7a7a7d;
@@ -131,7 +131,7 @@ td {
   bottom: -0.8rem;
   left: 0.35rem;
   transform: rotate(45deg);
-  background-color: #FFD700;
+  background-color: #5c5be5;
   position: absolute;
   z-index: -1;
 }
@@ -143,7 +143,7 @@ td {
   bottom: -0.8rem;
   right: 0.35rem;
   transform: rotate(45deg);
-  background-color: #FFD700;
+  background-color: #5c5be5;
   position: absolute;
   z-index: -1;
 }
@@ -170,7 +170,7 @@ td {
 }
 
 .exit:hover {
-  border: 0.1rem solid #FFD700;
+  border: 0.1rem solid #5c5be5;
 }
 
 .continue {
@@ -180,9 +180,9 @@ td {
   font-size: 1.3rem;
   color: #fff;
   text-transform: uppercase;
-  background-color: #FFD700;
+  background-color: #5c5be5;
   border: 0;
-  border-bottom: 0.2rem solid #FFD700;
+  border-bottom: 0.2rem solid #3838b8;
   border-radius: 2rem;
   cursor: pointer;
 }
@@ -208,4 +208,3 @@ td {
     font-size: 45%;
   }
 }
-
