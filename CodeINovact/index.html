@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeINovact Hackathon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./Favicon-icon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div
+      class="w-full h-auto overflow-scroll block h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-4 flex items-center justify-center"
+    >
+      <div class="bg-white py-6 px-10 sm:max-w-md w-full">
+        <div
+          class="sm:text-3xl text-2xl font-semibold text-center text-sky-600 mb-12"
+        >
+          Registration Form
+        </div>
+        <form action="" method="post">
+        <div class="">
+          <div>
+            <input
+              type="text"
+              class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
+              placeholder="Name of the team " required
+            />
+          </div>
+          <div>
+            <input
+              class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 my-8"
+              placeholder="Name of the Team Leader " required
+            />
+          </div>
+          <div>
+            <input
+              type="tel"
+              class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 mb-8"
+              placeholder="Contact No. of team leader " required
+            />
+          </div>
+          <div>
+            <label class="pb-2 border-sky-400 placeholder-gray-500 mb-8"
+              >Team Size (2-4)</label
+            >
+            <div class="checkbox-container">
+              <label class="checkbox-label" >
+                <input type="checkbox" name="team-size-2" value="2" /> 2
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="team-size-3" value="3" /> 3
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="team-size-4" value="4" /> 4
+              </label>
+            </div>
+          </div>
+          <br />
+          <div>
+            <label class="pb-2 border-sky-400 placeholder-gray-500 mb-8"
+              >Choice a Track</label
+            >
+            <br />
+            <select id="track" required>
+              <option value="" disabled selected>Select a track</option>
+              <option value="web">Web Development</option>
+              <option value="app">App Development</option>
+              <option value="ai">AI/ML</option>
+              <option value="design">Design</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <input
+              type="text"
+              class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
+              placeholder="Prior Experience in Hackathon(optional) "
+            />
+          </div>
+          <br />
+
+          <div class="flex">
+            <input
+              type="checkbox"
+              class="border-sky-400"
+              value="confirmation"
+              required
+            />
+            <div class="px-3 text-gray-500">
+              I confirm that I have filled out all the required information
+              accurately and completely
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center my-6">
+          <button
+            class="rounded-full p-3 w-full sm:w-56 bg-gradient-to-r from-sky-600 to-teal-300 text-white text-lg font-semibold" type="submit" onclick="WA_Group()"
+
+          >
+            Submit
+          </button>
+        </div>
+    </form>
+
+      </div>
+    </div>
+    <script>
+        const WA_Group = () => {
+            window.open('https://chat.whatsapp.com/GClxUdUctuaEUeWmJmNYHo');
+          };
+      
+          const submitForm = (event) => {
+            event.preventDefault(); // Prevent the default form submission
+      
+            // Check if all required fields are filled
+            const teamName = document.querySelector('input[name="team-name"]');
+            const teamLeaderName = document.querySelector('input[name="team-leader"]');
+            const contactNumber = document.querySelector('input[name="contact-number"]');
+            const track = document.getElementById('track');
+            const confirmationCheckbox = document.querySelector('input[name="confirmation"]');
+      
+            if (!teamName.value || !teamLeaderName.value || !contactNumber.value || !track.value || !confirmationCheckbox.checked) {
+              // Show a popup to fill out all required fields
+              alert('Please fill out all the required fields before submitting.');
+            } else {
+              // All required fields are filled, open WhatsApp group and submit the form
+              WA_Group();
+              event.target.submit(); // Submit the form
+            }
+          };
+      
+          // Add event listener to the submit button
+          const submitButton = document.querySelector('button[type="submit"]');
+          submitButton.addEventListener('click', submitForm);
+    </script>
+  </body>
+</html>
+
